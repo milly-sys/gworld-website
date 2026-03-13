@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-mcaz0x93+ab44ci3e3wqzv1$ott$1v-&d@es7=^8m)d6te-@-f
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'gworld-website.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 
 # APPLICATIONS
