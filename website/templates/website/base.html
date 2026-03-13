@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>G-World Solutions Ltd</title>
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+```
+
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+
+<nav class="main-nav">
+    <div class="nav-container">
+
+```
+    <div class="nav-logo">
+        <img src="{% static 'website/images/profile.png' %}" alt="logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'company_profile' %}">Company Profile</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'why_us' %}">Why Us</a></li>
+    </ul>
+
+</div>
+```
+
+</nav>
+
+<!-- PAGE CONTENT WILL LOAD HERE -->
+
+{% block content %}
+{% endblock %}
+
+<!-- FOOTER -->
+
+<footer>
+    <p>G-World Solutions Ltd</p>
+</footer>
+
+</body>
+</html>
